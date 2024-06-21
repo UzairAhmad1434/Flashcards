@@ -1,8 +1,7 @@
-// import { useState } from 'react'
+import { useState } from "react";
 import "./App.css";
 
 function App() {
-  // const [count, setCount] = useState(0)
   return (
     <>
       <div>
@@ -47,11 +46,20 @@ const questions = [
 ];
 
 function Flashcard() {
+  const [selectedId, setSelectedId] = useState(null);
+
+  function handleClick(id) {
+    setSelectedId(id !== selectedId ? id : null);
+  }
   return (
     <div className="cards_list">
       {questions.map((question) => (
-        <div key={question.id} className="cards">
-          {question.question}
+        <div
+          onClick={() => handleClick(question.id)}
+          key={question.id}
+          className={question.id === selectedId ? "selected" : "cards"}
+        >
+          {question.id === selectedId ? question.answer : question.question}
         </div>
       ))}
     </div>

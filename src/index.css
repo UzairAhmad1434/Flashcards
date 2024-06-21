@@ -16,7 +16,18 @@ body {
   justify-content: center;
   align-items: center;
 }
+.selected {
+  background: red;
+  color: white;
+  width: 45%;
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 
+  margin: 1rem;
+  border: 1px grey solid;
+}
 .cards {
   width: 45%;
   text-align: center;
