@@ -6,6 +6,7 @@
 
 body {
   display: flex;
+  background: #261010;
   align-items: center;
   justify-content: center;
   padding: 2rem;
@@ -22,17 +23,23 @@ body {
   width: 45%;
   font-size: 2rem;
   text-align: center;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+  border-radius: 1rem;
   margin: 1rem;
-  border: 1px grey solid;
 }
 .cards {
   width: 45%;
+  background: #c8b2b2;
   text-align: center;
   padding-top: 4rem;
   padding-bottom: 4rem;
   margin: 1rem;
   border: 1px grey solid;
+  border-radius: 1rem;
+}
+h1 {
+  color: rgb(196, 0, 0);
+  font-size: 3rem;
+  text-align: center;
 }
